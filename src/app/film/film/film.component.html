@@ -1,0 +1,51 @@
+<section class="content-section clearfix animated fadeIn">
+  <div fxLayout="row" fxLayoutAlign="center">
+    <div class="film-content">
+      <h1>Film Work</h1>
+      <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="1em grid">
+        <div fxFlex="33"
+          fxFlex.lt-sm="100"
+          fxFlex.lt-md="50"
+          fxFlex.md="50"
+          fxFlex.gt-md="50"
+          fxFlex.lg="33"
+          fxFlex.gt-lg="25"
+          fxLayout="column"
+          *ngFor="let item of items">
+          <mat-card fxFlex class="i-card">
+            <p fxLayout="row" class="item-card-media">
+              <img [src]="item.image">
+            </p>
+            <h3 class="film-title">{{item.title}}</h3>
+            <p fxLayout="row" fxLayoutGap="0.25em" class="detail-container">
+              <span class="detail-title">Credit:</span>
+              <span class="detail">{{item.credit}}</span>
+            </p>
+            <p fxLayout="row" fxLayoutGap="0.25em" class="detail-container">
+              <span class="detail-title">Year:</span>
+              <span class="detail">{{item.year}}</span>
+            </p>
+            <p fxLayout="row" fxLayoutGap="0.25em" class="detail-container">
+              <span class="detail-title">Synopsis:</span>
+              <span class="detail">{{item.synopsis}}</span>
+            </p>
+            <p fxLayout="row" fxLayoutGap="0.25em" class="detail-container">
+              <span class="detail-title">Length:</span>
+              <span class="detail">{{item.length}}</span>
+            </p>
+            <p fxLayout="row" fxLayoutGap="0.25em" *ngIf="item.note != null" class="detail-container">
+              <span class="detail-title">Note:</span>
+              <span class="detail">{{item.note}}</span>
+            </p>
+            <p fxLayout="row" fxLayoutGap="0.25em" *ngIf="item.imdb != null" class="detail-container">
+              <span class="detail-title"><a href="{{item.imdb}}" target="_blank">IMDB</a></span>
+            </p>
+            <p fxLayout="row" fxLayoutGap="0.25em" *ngIf="item.review != null" class="detail-container">
+              <span class="detail-title"><a href="{{item.review}}" target="_blank">Read the Review</a></span>
+            </p>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

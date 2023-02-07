@@ -1,0 +1,162 @@
+.home-content {
+  width: 75%;
+  max-width: 1280px;
+}
+
+.home-menu-div {
+  height: 300px;
+  min-height: 300px;
+  max-width: 320px;
+  cursor: pointer;
+}
+
+.home-menu-div:hover {
+  -moz-opacity: 0.8;/* Netscape */
+  -khtml-opacity: 0.8; /* Safari 1.x */
+  opacity: 0.8; /* Good browsers */
+}
+
+.home-menu-div-title {
+  padding: 0.5em 1em;
+  background-color: #171530;
+  background-image: url('~src/assets/images/layout/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #eee;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+.home-menu-div.art {
+  background-image: url('~src/assets/images/layout/menuArtTall.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-menu-div.web {
+  background-image: url('~src/assets/images/layout/menuWebTall.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-menu-div.film {
+  background-image: url('~src/assets/images/layout/menuFilmTall.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-menu-div.design {
+  background-image: url('~src/assets/images/layout/menuDesignTall.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work-links-min {
+  display: none;
+}
+
+mat-card-header.resume-header {
+  padding: 0.5em 1em;
+  background-color: #171530;
+  background-image: url('~src/assets/images/layout/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #eee;
+  font-weight: 500;
+}
+
+mat-card-header .resume-title {
+  font-size: 1.3em;
+}
+
+mat-card h3 {
+  color: #373274;
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+
+h4.degree {
+  color: #333;
+  font-size: 1em;
+  font-weight: 500;
+  text-indent: 1em;
+}
+
+p.university {
+  text-indent: 1em;
+  color: #666;
+}
+
+p.technologies {
+  padding: 0em 1em 0em 1em;
+  color: #666;
+}
+
+.work-history-div {
+  padding: 0em 1em;
+  p {
+    font-style: italic;
+  }
+}
+
+h4.business {
+  color: #333;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.email-div {
+  display: none;
+  width: 100%;
+  text-align: right;
+  .button-like {
+    width: 200px;
+    background-color:#373274;
+    color: #eee;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .email-div {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    display: block;
+  }
+  .home-content {
+    width: 90%;
+  }
+  .home-menu-div {
+    height: 200px;
+    min-height: 200px;
+    max-width: 100%;
+    cursor: pointer;
+  }
+  .home-menu-div.art {
+    background-image: url('~src/assets/images/layout/menuArtWide.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .home-menu-div.web {
+    background-image: url('~src/assets/images/layout/menuWebWide.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .home-menu-div.film {
+    background-image: url('~src/assets/images/layout/menuFilmWide.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .home-menu-div.design {
+    background-image: url('~src/assets/images/layout/menuDesignWide.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .work-links-min {
+    display: inline-block;
+  }
+
+}

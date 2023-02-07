@@ -1,0 +1,110 @@
+.main-container {
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  color:#ccc;
+  height:100vh;
+}
+
+.main-container .main-toolbar-app-title {
+  color: #eee;
+  font-weight: 500;
+}
+
+.main-toolbar {
+  background-color: #171530;
+  background-image: url('~src/assets/images/layout/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  /*make sure the toolbar will stay on top of the content as it scrolls past*/
+  z-index: 2;
+  .menu-icon {
+    height: 24px;
+    width: 24px;
+    font-size: 24px;
+    color: #eee;
+  }
+}
+
+.mat-sidenav.mat-drawer {
+  background-color: #222 !important;
+  height: 100%;
+}
+
+.main-sidenav-container {
+  /* When the sidenav is not fixed, strech the sidenav container to fill the available space.
+    This causes `mat-sidenav-content` to act as our scrolling element for desktop layouts*/
+  flex: 1;
+  overflow-x: hidden !important;
+}
+
+.is-mobile .main-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenavb container.
+    This allows our body to be our scrolling element for mobile layouts*/
+  flex: 1 0 auto;
+}
+
+.mat-expansion-panel:not([class*='mat-elevation-z']) {
+  box-shadow: none;
+  border-radius: 0px !important;
+}
+
+.mat-sidenav-menu-list {
+  min-width:200px;
+  overflow-x:hidden;
+  padding-top: 0px !important;
+  list-style-type: none;
+}
+
+.mat-sidenav-menu-list a.mat-list-item {
+  text-decoration:none;
+}
+
+.mat-sidenav-menu-list .mat-list-item {
+  color:#ddd;
+  display: block;
+  cursor: pointer;
+  padding: 1em;
+  border-bottom: 1px solid #999;
+}
+
+.mat-sidenav-menu-list .mat-list-item.active {
+  background-color:#ddd;
+  min-height: 48px;
+  cursor: pointer;
+}
+
+.mat-sidenav-menu-list .mat-list-item div {
+  font-size: 14px;
+}
+
+.mat-sidenav-menu-list .mat-list-item:hover {
+  background-color:#684b6d;
+}
+
+.mat-sidenav .mat-list-item {
+  font-size:15px;
+}
+
+a.email,
+a.email:visited,
+a.email:active,
+a.email:focus,
+a.email:link
+ {
+  color: #eee;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+  .main-container .main-toolbar-app-title {
+    font-size: 20pt;
+  }
+
+}

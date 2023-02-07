@@ -1,0 +1,40 @@
+<app-image-overlay></app-image-overlay>
+<div class="main-container" #mainContainer>
+  <mat-toolbar
+    #mainToolbar
+    class="main-toolbar"
+    fxLayout="row"
+    fxLayoutAlign="start center"
+    fxLayoutGap="16px">
+    <button mat-icon-button raised aria-label="menu-icon"
+      (click)="snav.toggle()">
+      <mat-icon class="menu-icon">menu</mat-icon>
+    </button>
+    <span class="main-toolbar-app-title">{{title}}</span>
+    <div
+      *ngIf="!match960"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+      class="button-like"
+      (click)="emailLink('mailto:contact@artofjohnbaker.com')">contact@artofjohnbaker.com</div>
+    <span fxFlex></span>
+  </mat-toolbar>
+  <mat-sidenav-container class="main-sidenav-container">
+    <mat-sidenav #snav
+      [mode]="'over'"
+      [fixedInViewport]="true"
+      [fixedTopGap]="match960 ? 56 : 64"
+      [opened]="sidenavOpen">
+      <nav class="mat-sidenav-menu-list">
+        <span class="mat-list-item" [routerLink]="['/']">Home</span>
+        <span class="mat-list-item" [routerLink]="['/web']">Web Design</span>
+        <span class="mat-list-item" [routerLink]="['/digital-design']">Digital Design</span>
+        <span class="mat-list-item" [routerLink]="['/digital-artwork']">Digital Art</span>
+        <span class="mat-list-item" [routerLink]="['/film']">Film</span>
+      </nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

@@ -1,0 +1,55 @@
+.film-content {
+  width: 75%;
+  max-width: 1280px;
+}
+
+h1 {
+  color: #373274;
+  font-weight: 500;
+}
+
+.item-card-media {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:inline-block;
+  height: 160px;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.item-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.i-card {
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: rgb(0,0,0,0.2) 0 0 4px;
+  border-collapse: collapse;
+  p.detail-container {
+    padding:0em 1em;
+  }
+  p span { font-size: 0.9em; }
+  p span.detail-title {
+    color: #373274;
+    font-weight: 500;
+  }
+  h3.film-title {
+    padding: 0.5em 1em;
+    background-color: #171530;
+    background-image: url('~src/assets/images/layout/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #eee;
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .film-content {
+    width: 90%;
+  }
+}

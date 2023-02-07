@@ -1,0 +1,50 @@
+<section class="content-section clearfix animated fadeIn">
+  <div fxLayout="row" fxLayoutAlign="center">
+    <div class="web-content" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1em">
+      <h1>Websites</h1>
+    </div>
+  </div>
+  <div
+    fxLayout="row"
+    fxLayoutAlign="center">
+    <div class="web-content"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+      fxLayoutGap="1em"
+      fxLayout.lt-sm="column"
+      fxLayout.sm="column"
+      fxLayoutAlign.lt-sm="start"
+      fxLayoutAlign.sm="start">
+      <mat-card
+        fxFlex="50"
+        fxFlex.lt-sm="100"
+        fxFlex.sm="100">
+        <mat-card-header fxLayout="row" fxLayoutAlign="start center" class="web-header">
+          <span class="web-title">Shapiro and Baker</span>
+          <span fxFlex></span>
+        </mat-card-header>
+        <img mat-card-image src="../../../assets/images/web/gcp_web.png" alt="Heal My Gums">
+        <mat-card-content>
+        </mat-card-content>
+        <mat-card-actions fxLayout="row">
+          <button mat-raised-button fxFlex (click)="goToLink('http://healmygums.com/home')">Visit the site</button>
+        </mat-card-actions>
+      </mat-card>
+      <mat-card
+        fxFlex="50"
+        fxFlex.lt-sm="100"
+        fxFlex.sm="100">
+        <mat-card-header fxLayout="row" fxLayoutAlign="start center" class="web-header">
+          <span class="web-title">Ohio Academy of Periodontists</span>
+          <span fxFlex></span>
+        </mat-card-header>
+        <img mat-card-image src="../../../assets/images/web/oap_web.png" alt="Ohio Academy of Periodontists">
+        <mat-card-content>
+        </mat-card-content>
+        <mat-card-actions fxLayout="row">
+          <button mat-raised-button fxFlex (click)="goToLink('http://ohperio.org/')">Visit the site</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</section>

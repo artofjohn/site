@@ -1,0 +1,133 @@
+<section class="content-section clearfix animated fadeIn">
+  <div fxLayout="row" fxLayoutAlign="center">
+    <div class="design-content">
+      <h1>Digital Design</h1>
+      <div class="web-content"
+        fxLayout="row"
+        fxLayoutAlign="start"
+        fxLayoutGap="1em"
+        fxLayout.lt-sm="column"
+        fxLayout.sm="column"
+        fxLayoutAlign.lt-sm="start"
+        fxLayoutAlign.sm="start">
+        <mat-card
+          fxFlex="50"
+          fxFlex.lt-sm="100"
+          fxFlex.sm="100">
+          <mat-card-header fxLayout="row" fxLayoutAlign="start center" class="design-header">
+            <span class="design-title">Marketing/Support</span>
+            <span fxFlex></span>
+          </mat-card-header>
+          <mat-card-content class="content">
+            <h3>Technical Manuals</h3>
+            <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1em">
+              <button
+                mat-raised-button
+                (click)="downloadMyFile('../../../assets/pdfs/360_Manual_v1_090919.pdf','360_Health_Manual.pdf')">
+                <span>360 Health Manual</span>
+              </button>
+              <button
+                mat-raised-button
+                (click)="downloadMyFile('../../../assets/pdfs/iosurg_manual_v1_4_1_optimized.pdf','iosurg_manual_v1_4_1_optimized.pdf')">
+                <span>IOSurg Manual</span>
+              </button>
+              <button
+                mat-raised-button
+                (click)="downloadMyFile('../../../assets/pdfs/LACS_2_8_Admin.pdf','LACS_Manual.pdf')">
+                <span>LACS Manual</span>
+              </button>
+              <h3>Brochures</h3>
+              <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1em">
+                <button
+                  mat-raised-button
+                  (click)="downloadMyFile('../../../assets/pdfs/F2FTrifoldBrochure.pdf','F2FTrifoldBrochure.pdf')">
+                  <span>Face2Face Trifold Brochure</span>
+                </button>
+                <button
+                  mat-raised-button
+                  (click)="downloadMyFile('../../../assets/pdfs/IOSurgTrifoldBrochure.pdf','IOSurgTrifoldBrochure.pdf')">
+                  <span>IOSurg Trifold Brochure</span>
+                </button>
+                <button
+                  mat-raised-button
+                  (click)="downloadMyFile('../../../assets/pdfs/KapiosTrifoldBrochure.pdf','KapiosTrifoldBrochure.pdf')">
+                  <span>Kapios Trifold Brochure</span>
+                </button>
+                <button
+                  mat-raised-button
+                  (click)="downloadMyFile('../../../assets/pdfs/LACSTrifoldBrochure.pdf','LACSTrifoldBrochure.pdf')">
+                  <span>LACS Trifold Brochure</span>
+                </button>
+                <h3>Marketing Materials</h3>
+                <button
+                  mat-raised-button
+                  (click)="downloadMyFile('../../../assets/pdfs/IOSurg_OnePager.pdf','IOSurg_OnePager.pdf')">
+                  <span>IOSurg One Pager</span>
+                </button>
+                <button
+                  mat-raised-button
+                  (click)="downloadMyFile('../../../assets/pdfs/lacs_onepager.pdf','LACS_OnePager.pdf')">
+                  <span>LACS One Pager</span>
+                </button>
+                <button
+                  mat-raised-button
+                  (click)="downloadMyFile('../../../assets/pdfs/MichiganSuccessStory.pdf','MichiganSuccessStory.pdf')">
+                  <span>LACS Michigan Success Story</span>
+                </button>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+        <mat-card
+          fxFlex="50"
+          fxFlex.lt-sm="100"
+          fxFlex.sm="100">
+          <mat-card-header fxLayout="row" fxLayoutAlign="start center" class="design-header">
+            <span class="design-title">Video Production</span>
+            <span fxFlex></span>
+          </mat-card-header>
+          <mat-card-content class="content">
+            <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1em">
+              <div class="container">
+                <iframe
+                  class="responsive-iframe"
+                  [src]="video1"
+                  frameborder="0"
+                  webkitallowfullscreen
+                  mozallowfullscreen
+                  allowfullscreen></iframe>
+              </div>
+              <div class="container">
+                <iframe
+                  class="responsive-iframe"
+                  [src]="video2"
+                  frameborder="0"
+                  webkitallowfullscreen
+                  mozallowfullscreen
+                  allowfullscreen></iframe>
+              </div>
+              <div class="container">
+                <iframe
+                  class="responsive-iframe"
+                  [src]="video3"
+                  frameborder="0"
+                  webkitallowfullscreen
+                  mozallowfullscreen
+                  allowfullscreen></iframe>
+              </div>
+              <div class="container">
+                <iframe
+                  class="responsive-iframe"
+                  [src]="video4"
+                  frameborder="0"
+                  webkitallowfullscreen
+                  mozallowfullscreen
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,155 @@
+<section class="content-section clearfix animated fadeIn">
+  <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1em">
+
+    <div fxLayout="row" fxLayoutAlign="center">
+      <div class="home-content">
+        <div
+          fxLayout="row"
+          fxLayout.lt-sm="column"
+          fxLayout.sm="column"
+          fxLayoutAlign="start center"
+          fxLayoutAlign.lt-sm="start"
+          fxLayoutAlign.sm="start"
+          fxLayoutGap="0.5em">
+          <div fxLayout="column"
+            fxLayoutAlign="start"
+            fxFlex
+            class="home-menu-div web"
+            [routerLink]="['/web']">
+            <span class="home-menu-div-title">Web Design</span>
+          </div>
+          <div fxLayout="column"
+            fxLayoutAlign="start"
+            fxFlex
+            class="home-menu-div design"
+            [routerLink]="['/digital-design']">
+            <span class="home-menu-div-title">Digital Design</span>
+          </div>
+          <div fxLayout="column"
+            fxLayoutAlign="start"
+            fxFlex
+            class="home-menu-div art"
+            [routerLink]="['/digital-artwork']">
+            <span class="home-menu-div-title">Digital Art</span>
+          </div>
+          <div fxLayout="column"
+            fxLayoutAlign="start"
+            fxFlex
+            class="home-menu-div film"
+            [routerLink]="['/film']">
+            <span class="home-menu-div-title">Film Work</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center">
+      <mat-card class="home-content">
+        <mat-card-header fxLayout="row" fxLayoutAlign="start center" class="resume-header">
+          <span class="resume-title">Resume</span>
+          <span fxFlex></span>
+        </mat-card-header>
+        <mat-card-content>
+          <div
+            fxLayout="row"
+            fxLayoutAlign="start"
+            fxLayout.lt-sm="column"
+            fxLayout.sm="column"
+            fxLayoutAlign.lt-sm="start"
+            fxLayoutAlign.sm="start"
+            fxLayoutGap="2em">
+            <div
+            fxFlex="30"
+            fxFlex.lt-sm="100"
+            fxFlex.sm="100"
+            fxLayout="column"
+            fxLayoutAlign="start">
+              <h3 fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="0.25em">
+                <mat-icon>school</mat-icon>
+                <span>Education</span>
+              </h3>
+              <h4 class="degree">BA (Cyberarts)</h4>
+              <p class="university">
+                University of Toledo, 2000
+              </p>
+              <h4 class="degree">MS (Web Site Design)</h4>
+              <p class="university">
+                University of Denver, 2012
+              </p>
+              <h3 fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="0.25em">
+                <mat-icon>devices</mat-icon>
+                <span>Technologies</span>
+              </h3>
+              <p class="technologies">Angular, Wordpress, HTML, Javascript, CSS, ChartJS, Adobe Creative Suite (Photoshop, Illustrator, InDesign, Premiere, etc.)</p>
+
+            </div>
+            <div
+              fxFlex="70"
+              fxFlex.lt-sm="100"
+              fxFlex.sm="100"
+              fxLayout="column"
+              fxLayoutAlign="start">
+              <h3 fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="0.25em">
+                <mat-icon>business_center</mat-icon>
+                <span>Work Experience</span>
+                <span fxFlex></span>
+              </h3>
+              <div class="work-history-div">
+                <h4 class="business">Kapios Health (2017-2023)</h4>
+                <p>Front-end Developer/Graphic Designer</p>
+                <ul>
+                  <li>Created front-end Angular applications for healthcare management</li>
+                  <li>Built front-end for I/O Surg CPT code tracker with MCG integration</li>
+                  <li>Built front-end for Audit Ready Compliance tool</li>
+                  <li>Built front-end for Hermes patient intake and insurance claim tool</li>
+                  <li>Built front-end for SDRA social determinates of health tool</li>
+                  <li>Designed workflow/wireframe comps for I/O Surg, Audit Ready Compliance, Hermes, SDRA, Nurse Compliance Tool and Face2Face</li>
+                  <li>Designed logos for NextTech Ohio, I/O Surg, SDRA, Audit Ready Compliance, Hermes</li>
+                  <li>Wrote instructional and technical manuals for I/O Surg, SDRA, Audit Ready Compliance</li>
+                  <li>Filmed and edited instructional videos for I/O Surg and Audit Ready Compliance</li>
+                  <li>Filmed and edited commercial for Face2Face mobile app</li>
+                </ul>
+                <h4 class="business">MR Direct International (2016-2017)</h4>
+                <p>Front-end Developer</p>
+                <ul>
+                  <li>Designed AngularJS workflow tools for internal development and design, using SPA methodology</li>
+                  <li>Built a phone directory program for internal users</li>
+                  <li>Built a product directory which distributed data to resellers</li>
+                </ul>
+                <h4 class="business">O'Reilly Media (2012-2016)</h4>
+                <p>Web Design Instructor</p>
+                <ul>
+                  <li>Mentored students for web design courses at O'Reilly School of Technology</li>
+                  <li>Provided web design articles for the OST blog</li>
+                </ul>
+                <h4 class="business">Absolutely No1 Films (2010-Present)</h4>
+                <p>Graphic Designer/Special Effects/Producer</p>
+                <ul>
+                  <li>Created digital graphics and overlays</li>
+                  <li>Built props and models</li>
+                  <li>Production design, including posters and marketing materials</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <p
+          fxLayout="row"
+          fxLayout.lt-sm="column"
+          fxLayoutAlign="end center"
+          fxLayoutGap="1em" class="email-div">
+            <span fxFlex></span>
+            <a href="https://www.linkedin.com/in/john-baker-98704230" target="_blank">
+              <img src="../assets/images/layout/linkedin.png" class="linkedin-lg">
+            </a>
+            <a href="https://www.imdb.com/name/nm4582911/" target="_blank" class="imdb-lg">
+              <img src="../assets/images/layout/imdb.png">
+            </a>
+            <span
+              class="button-like"
+              (click)="emailLink('mailto:contact@artofjohnbaker.com')">contact@artofjohnbaker.com</span>
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</section>

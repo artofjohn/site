@@ -1,0 +1,24 @@
+<section class="content-section clearfix animated fadeIn">
+  <div fxLayout="row" fxLayoutAlign="center">
+    <div class="art-content">
+      <h1>Digital Artwork</h1>
+      <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="1em grid">
+        <div fxFlex="25"
+          fxFlex.lt-sm="100"
+          fxFlex.lt-md="50"
+          fxFlex.md="50"
+          fxFlex.gt-md="50"
+          fxFlex.lg="25"
+          fxFlex.gt-lg="25"
+          fxLayout="column"
+          *ngFor="let item of items">
+          <mat-card fxFlex class="i-card">
+            <p fxLayout="row" class="item-card-media">
+              <img [src]="item.thumbnail" (click)="open(item.image)">
+            </p>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

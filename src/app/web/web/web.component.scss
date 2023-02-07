@@ -1,0 +1,38 @@
+.web-content {
+  width: 75%;
+  max-width: 1280px;
+}
+
+h1 {
+  color: #373274;
+  font-weight: 500;
+}
+
+
+mat-card-header.web-header {
+  padding: 0.5em 1em;
+  background-color: #171530;
+  background-image: url('~src/assets/images/layout/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #eee;
+  font-weight: 500;
+}
+
+mat-card-header .web-title {
+  font-size: 1.3em;
+}
+
+
+.web-content p {
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 960px) {
+  .web-content {
+    width: 90%;
+  }
+  mat-card-title {
+    font-size: 1.3em;
+  }
+}
