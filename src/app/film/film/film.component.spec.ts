@@ -9,7 +9,7 @@ describe('FilmComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ FilmComponent ],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+      schemas: [CUSTOM_ELEMENTS_SCHEMA] //ignore angular material elements
     })
     .compileComponents();
 

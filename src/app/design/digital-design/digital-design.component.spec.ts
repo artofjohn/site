@@ -9,7 +9,7 @@ describe('DigitalDesignComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ DigitalDesignComponent ],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+      schemas: [CUSTOM_ELEMENTS_SCHEMA] //ignore angular material elements
     })
     .compileComponents();
 

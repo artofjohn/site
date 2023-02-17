@@ -6,17 +6,12 @@ import { HomeComponent } from './home.component';
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
-  let mockRouter:any;
-  class MockRouter {
-      //noinspection TypeScriptUnresolvedFunction
-      navigate = jasmine.createSpy('navigate');
-  }
 
   beforeEach(async () => {
-    mockRouter = new MockRouter();
     await TestBed.configureTestingModule({
       imports: [RouterTestingModule],
       declarations: [ HomeComponent ],
+       //ignore angular material elements
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
