@@ -4,7 +4,7 @@ import { ReplaySubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class MediaMatchServiceService {
+export class MediaMatchService {
 
   private matches = new ReplaySubject<boolean>(1);
   public match$ = this.matches.asObservable();

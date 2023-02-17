@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
 
 import {
   ImageOverlayService,
@@ -51,7 +50,6 @@ export class ArtComponent {
   ];
 
   constructor(
-    private dialog: MatDialog,
     private imageOverlaySrv: ImageOverlayService,
   ) {}
 

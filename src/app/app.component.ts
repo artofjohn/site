@@ -18,7 +18,7 @@ import {
 
 import {
   AppConfigService,
-  MediaMatchServiceService,
+  MediaMatchService,
   SidenavService,
 } from './shared'
 
@@ -31,13 +31,13 @@ export class AppComponent {
   @ViewChild('snav') snav: any;
 
   description: string = '';
-  title: string = '';
+  title: string = 'Art of John Baker';
   version: string = '';
 
   match960: boolean = false;
   sidenavOpen: boolean = false;
 
-  private media960Matcher = new MediaMatchServiceService('(max-width: 960px)');
+  private media960Matcher = new MediaMatchService('(max-width: 960px)');
 
   constructor(
     private appConfigSrv: AppConfigService,
